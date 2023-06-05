@@ -1,3 +1,4 @@
+vim.opt.autochdir = true
 return {
   -- Configure AstroNvim updates
   updater = {
