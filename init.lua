@@ -1,4 +1,20 @@
+-- Let the explorer update so git works
 vim.opt.autochdir = true
+-- Sane tab defaults
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+-- Save undos longer so if we close vim its saved
+vim.opt.swapfile = false
+vim.opt.backup = false
+vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+vim.opt.undofile = true 
+-- Faster update speed, default i 4000
+vim.opt.updatetime = 50 
+-- Allow for seeing if search is hitting anything
+vim.opt.hlsearch = false
+vim.opt.incsearch = true 
+
 return {
   -- Configure AstroNvim updates
   updater = {
