@@ -1,5 +1,5 @@
 -- Let the explorer update so git works
-vim.opt.autochdir = true
+-- vim.opt.autochdir = true
 -- Sane tab defaults
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
